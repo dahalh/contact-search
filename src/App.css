@@ -1,38 +1,88 @@
-.App {
+h2 {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* navbar */
+.header {
+  background: rgba(255, 177, 33, 0.671);
+  color: black;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* view-more */
+.view-more {
+  color: blue;
+  text-decoration: none;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+tr {
+  text-align: center;
+}
+
+td {
+  text-align: center;
+}
+
+/* search bar */
+.search-bar {
+  height: 50px;
+  background-color: white;
+  border-radius: 30px;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.search-bar > i {
+  font-size: 22px;
+  color: gray;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.search-bar > input {
+  width: 250px;
+  outline: none;
+  border: none;
+}
+
+/* card */
+
+.card-text {
+  display: flex;
+  align-self: flex-start;
+}
+
+.client-info {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  grid-template-columns: repeat(1, 1fr);
+}
+
+/* responsive */
+
+@media (max-width: 500px) {
+  .table thead {
+    display: none;
+    /* flex-direction: column; */
   }
-  to {
-    transform: rotate(360deg);
+
+  .table,
+  .table tbody,
+  .table tr,
+  .table td {
+    display: block;
+    width: 100%;
+  }
+  .table tr {
+    margin-bottom: 15px;
+  }
+
+  /* info cards */
+  .client-info {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 10px;
+  }
+
+  .card {
+    margin-bottom: 15px;
   }
 }
