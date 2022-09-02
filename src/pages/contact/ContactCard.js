@@ -3,6 +3,7 @@ import { useParams, useNavigate } from "react-router-dom";
 import { useSelector } from "react-redux";
 import { Container, Card, Button } from "react-bootstrap";
 import Header from "../../components/Header";
+import Footer from "../../components/Footer";
 
 const ContactCard = () => {
   const navigate = useNavigate();
@@ -25,6 +26,7 @@ const ContactCard = () => {
         >
           <i className="fa-solid fa-arrow-left"></i> Back
         </Button>
+        <h2 className="mb-5">{contact.name}</h2>
         <div className="client-info">
           <Card style={{ width: "20rem", height: "25rem" }}>
             <Card.Body>
@@ -33,16 +35,26 @@ const ContactCard = () => {
                 <strong>Name </strong> {" : "} {contact.name}
               </Card.Text>
               <Card.Text>
-                <strong>Email</strong> {" : "} {contact.email}
-              </Card.Text>
-              <Card.Text>
                 <strong>Username</strong> {" : "} {contact.username}
               </Card.Text>
               <Card.Text>
-                <strong>Phone Number</strong> {" : "} {contact.phone}
+                <strong>Email</strong> {" : "}
+                &nbsp;
+                <a href={`mailto:${contact.email}`}>{contact.email}</a>
               </Card.Text>
               <Card.Text>
-                <strong>Website</strong> {" : "} {contact.website}
+                <strong>Phone</strong> {" : "} &nbsp;{" "}
+                <a href={`tel:+${contact.phone}`}>+{contact.phone}</a>
+              </Card.Text>
+              <Card.Text>
+                <strong>Website</strong> {" : "} &nbsp;{" "}
+                <a
+                  href={`http://${contact.website}`}
+                  target="blank"
+                  rel="noopener noreferrer"
+                >
+                  {contact.website}
+                </a>
               </Card.Text>
             </Card.Body>
           </Card>
@@ -76,6 +88,7 @@ const ContactCard = () => {
           </Card>
         </div>
       </Container>
+      <Footer />
     </>
   );
 };

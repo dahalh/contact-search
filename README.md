@@ -5,6 +5,10 @@ https://jsonplaceholder.typicode.com/users. The user is then allowed
 to search through the contact list using either the contact's name
 or the contact's company name.
 
+The website can be found at:
+
+https://contact-search-six.vercel.app/
+
 ## Installation
 
 The project is created using React JS. Please follow the steps
@@ -26,3 +30,4 @@ Please install before starting the app
 
 - [Github - @dahalh](https://www.github.com/dahalh)
 - [Email - dahalh@outlook.com](mailto:dahalh@outlook.com)
+- [LinkedIn - @himanshudahal](https://www.linkedin.com/in/himanshudahal/)

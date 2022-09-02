@@ -16,7 +16,7 @@ const ContactTable = () => {
   }, [contacts, dispatch]);
 
   return (
-    <Container>
+    <Container className="mb-5">
       <h2 className="mt-4">Contacts</h2>
       <div className="table mt-3">
         <div className="search-bar mb-2">
@@ -64,7 +64,9 @@ const ContactTable = () => {
                     </Link>
                   </td>
                   <td>{contact.name}</td>
-                  <td>{contact.email}</td>
+                  <td>
+                    <a href={`mailto:${contact.email}`}>{contact.email}</a>
+                  </td>
                   {/* <td>{contact.username}</td> */}
                   <td>{contact.company.name}</td>
                   <td>
