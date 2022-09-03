@@ -1,13 +1,12 @@
 # Contact Search
 
 This is a website which generates a contact list using the
-https://jsonplaceholder.typicode.com/users. The user is then allowed
-to search through the contact list using either the contact's name
+[https://jsonplaceholder.typicode.com/users](https://jsonplaceholder.typicode.com/users).The user is then allowed to search through the contact list using either the contact's name
 or the contact's company name.
 
 The website can be found at:
 
-https://contact-search-six.vercel.app/
+[https://contact-search-six.vercel.app/](https://contact-search-six.vercel.app/)
 
 ## Installation
 
