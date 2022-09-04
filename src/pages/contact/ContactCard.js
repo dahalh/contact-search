@@ -32,22 +32,22 @@ const ContactCard = () => {
             <Card.Body>
               <Card.Title className="mb-4">Client Information:</Card.Title>
               <Card.Text>
-                <strong>Name </strong> {" : "} {contact.name}
+                <b>Name </b> {" : "} {contact.name}
               </Card.Text>
               <Card.Text>
-                <strong>Username</strong> {" : "} {contact.username}
+                <b>Username</b> {" : "} {contact.username}
               </Card.Text>
               <Card.Text>
-                <strong>Email</strong> {" : "}
+                <b>Email</b> {" : "}
                 &nbsp;
                 <a href={`mailto:${contact.email}`}>{contact.email}</a>
               </Card.Text>
               <Card.Text>
-                <strong>Phone</strong> {" : "} &nbsp;{" "}
+                <b>Phone</b> {" : "} &nbsp;{" "}
                 <a href={`tel:+${contact.phone}`}>+{contact.phone}</a>
               </Card.Text>
               <Card.Text>
-                <strong>Website</strong> {" : "} &nbsp;{" "}
+                <b>Website</b> {" : "} &nbsp;{" "}
                 <a
                   href={`http://${contact.website}`}
                   target="blank"
@@ -63,26 +63,25 @@ const ContactCard = () => {
             <Card.Body>
               <Card.Title className="mb-4">Company Information:</Card.Title>
               <Card.Text>
-                <strong>Name</strong> {" : "} {contact.company.name}
+                <b>Name</b> {" : "} {contact.company.name}
               </Card.Text>
               <Card.Text>
-                <strong>City</strong> {" : "} {contact.address.city}
+                <b>City</b> {" : "} {contact.address.city}
               </Card.Text>
               <Card.Text>
-                <strong>Street</strong> {" : "} {contact.address.street}
+                <b>Street</b> {" : "} {contact.address.street}
               </Card.Text>
               <Card.Text>
-                <strong>Suite</strong> {" : "} {contact.address.suite}
+                <b>Suite</b> {" : "} {contact.address.suite}
               </Card.Text>
               <Card.Text>
-                <strong>Zip Code</strong> {" : "} {contact.address.zipcode}
+                <b>Zip Code</b> {" : "} {contact.address.zipcode}
               </Card.Text>
               <Card.Text>
-                <strong>Catchphrase</strong> {" : "}{" "}
-                {contact.company.catchPhrase}
+                <b>Catchphrase</b> {" : "} {contact.company.catchPhrase}
               </Card.Text>
               <Card.Text>
-                <strong>Business</strong> {" : "} {contact.company.bs}
+                <b>Business</b> {" : "} {contact.company.bs}
               </Card.Text>
             </Card.Body>
           </Card>

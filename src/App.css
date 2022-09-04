@@ -2,6 +2,10 @@ h2 {
   text-align: center;
 }
 
+.card-body {
+  text-align: center;
+}
+
 /* navbar */
 .header {
   background: rgba(255, 177, 33, 0.671);
@@ -44,6 +48,13 @@ td {
 
 /* card */
 
+.contacts {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1rem;
+  flex-wrap: wrap;
+}
+
 .card-text {
   display: flex;
   align-self: flex-start;
@@ -59,19 +70,13 @@ td {
 /* responsive */
 
 @media (max-width: 500px) {
-  .table thead {
-    display: none;
-  }
-
-  .table,
-  .table tbody,
-  .table tr,
-  .table td {
-    display: block;
-    width: 100%;
-  }
-  .table tr {
-    margin-bottom: 15px;
+  .contacts {
+    display: flex;
+    grid-template-columns: 1fr;
+    grid-gap: 1rem;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
   }
 
   /* info cards */
@@ -79,6 +84,7 @@ td {
     display: grid;
     grid-template-columns: 1fr;
     padding: 10px;
+    margin-left: 8px;
   }
 
   .card {
