@@ -5,15 +5,12 @@ import { Container, Card, Button } from "react-bootstrap";
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 
-const ContactCard = () => {
+const ContactInfoCard = () => {
   const navigate = useNavigate();
   const { contacts } = useSelector((state) => state.contacts);
-  console.log(contacts);
   const { id } = useParams();
-  console.log(id);
 
   const contact = contacts.find((info) => +info.id === +id);
-  console.log(contact);
 
   return (
     <>
@@ -28,7 +25,7 @@ const ContactCard = () => {
         </Button>
         <h2 className="mb-5">{contact.name}</h2>
         <div className="client-info">
-          <Card style={{ width: "20rem", height: "25rem" }}>
+          <Card style={{ width: "24rem", height: "25rem" }}>
             <Card.Body>
               <Card.Title className="mb-4">Client Information:</Card.Title>
               <Card.Text>
@@ -59,7 +56,7 @@ const ContactCard = () => {
             </Card.Body>
           </Card>
 
-          <Card style={{ width: "20rem", height: "25rem" }}>
+          <Card style={{ width: "24rem", height: "25rem" }}>
             <Card.Body>
               <Card.Title className="mb-4">Company Information:</Card.Title>
               <Card.Text>
@@ -78,7 +75,7 @@ const ContactCard = () => {
                 <b>Zip Code</b> {" : "} {contact.address.zipcode}
               </Card.Text>
               <Card.Text>
-                <b>Catchphrase</b> {" : "} {contact.company.catchPhrase}
+                <b>Catchphrase </b> {" : "} {contact.company.catchPhrase}
               </Card.Text>
               <Card.Text>
                 <b>Business</b> {" : "} {contact.company.bs}
@@ -92,4 +89,4 @@ const ContactCard = () => {
   );
 };
 
-export default ContactCard;
+export default ContactInfoCard;

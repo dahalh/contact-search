@@ -1,6 +1,6 @@
 import "./App.css";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import ContactCard from "./pages/contact/ContactCard";
+import ContactInfoCard from "./pages/contact/ContactInfoCard";
 import { ContactPage } from "./pages/contact/ContactPage";
 
 const App = () => {
@@ -9,7 +9,7 @@ const App = () => {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<ContactPage />} />
-          <Route path="/contact/:id" element={<ContactCard />} />
+          <Route path="/contact/:id" element={<ContactInfoCard />} />
         </Routes>
       </BrowserRouter>
     </div>

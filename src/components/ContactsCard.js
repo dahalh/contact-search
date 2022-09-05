@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { fetchContactsAction } from "../pages/contact/contactsAction";
-import { Table, Container, Button, Card } from "react-bootstrap";
+import { Container, Card } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
 const ContactsCard = () => {
@@ -42,16 +42,27 @@ const ContactsCard = () => {
             return false;
           })
           .map((contact) => (
-            <Card key={contact.id} style={{ width: "18rem" }}>
-              {/* <Card.Img variant="top" src="holder.js/100px180" /> */}
+            <Card
+              className="mb-3"
+              key={contact.id}
+              style={{ width: "18rem", height: "17rem" }}
+            >
               <Card.Body>
-                <Card.Title>{contact.name}</Card.Title>
+                <Card.Title className="mb-4">{contact.name}</Card.Title>
                 <Card.Text>
+                  <b>Email:</b> &nbsp;
                   <a href={`mailto:${contact.email}`}>{contact.email}</a>
                 </Card.Text>
-                <Card.Text>{contact.company.name}</Card.Text>
+                <Card.Text>
+                  <b>Phone</b> {" : "} &nbsp;{" "}
+                  <a href={`tel:+${contact.phone}`}>+{contact.phone}</a>
+                </Card.Text>
                 <Card.Text>
                   {" "}
+                  <b>Company</b> {" : "} {contact.company.name}
+                </Card.Text>
+                <Card.Text className="mb-4">
+                  <b>Website</b> {" : "} &nbsp;{" "}
                   <a
                     href={`http://${contact.website}`}
                     target="blank"

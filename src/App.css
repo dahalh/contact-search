@@ -16,6 +16,7 @@ h2 {
 .view-more {
   color: blue;
   text-decoration: none;
+  margin-bottom: 25px;
 }
 
 tr {
@@ -50,7 +51,7 @@ td {
 
 .contacts {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   grid-gap: 1rem;
   flex-wrap: wrap;
 }
@@ -84,7 +85,7 @@ td {
     display: grid;
     grid-template-columns: 1fr;
     padding: 10px;
-    margin-left: 8px;
+    /* margin-left: 8px; */
   }
 
   .card {
