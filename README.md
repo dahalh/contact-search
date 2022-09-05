@@ -23,7 +23,14 @@ install using yarn.
 Please install before starting the app
 
 ```bash
+  cd contact-search-main
+```
+
+```bash
   npm install
+```
+
+```bash
   npm start
 ```
 
