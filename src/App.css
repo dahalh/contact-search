@@ -50,6 +50,7 @@ td {
 /* card */
 
 .contacts {
+  margin-left: 60px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 1rem;
@@ -85,7 +86,6 @@ td {
     display: grid;
     grid-template-columns: 1fr;
     padding: 10px;
-    /* margin-left: 8px; */
   }
 
   .card {

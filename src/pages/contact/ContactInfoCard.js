@@ -63,6 +63,12 @@ const ContactInfoCard = () => {
                 <b>Name</b> {" : "} {contact.company.name}
               </Card.Text>
               <Card.Text>
+                <b>Catchphrase </b> {" : "} {contact.company.catchPhrase}
+              </Card.Text>
+              <Card.Text>
+                <b>Business</b> {" : "} {contact.company.bs}
+              </Card.Text>
+              <Card.Text>
                 <b>City</b> {" : "} {contact.address.city}
               </Card.Text>
               <Card.Text>
@@ -73,12 +79,6 @@ const ContactInfoCard = () => {
               </Card.Text>
               <Card.Text>
                 <b>Zip Code</b> {" : "} {contact.address.zipcode}
-              </Card.Text>
-              <Card.Text>
-                <b>Catchphrase </b> {" : "} {contact.company.catchPhrase}
-              </Card.Text>
-              <Card.Text>
-                <b>Business</b> {" : "} {contact.company.bs}
               </Card.Text>
             </Card.Body>
           </Card>
